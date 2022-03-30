@@ -1,13 +1,16 @@
 import React from 'react';
 import {StatusBar} from 'react-native';
 import * as eva from '@eva-design/eva';
-import { ApplicationProvider, IconRegistry, useTheme } from '@ui-kitten/components';
+import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { AppNavigator } from './components/navigation/navigation.component';
 import 'react-native-gesture-handler';
-
-// test
-
+/**
+ * @description
+ * IconRegistry : préchargement des icons eva
+ * ApplicationProvider : Provider de kitten
+ * AppNavigator : le navigateur de kitten (entre les pages du dossier components)
+ */
 export default function App() {
     return (
         <>

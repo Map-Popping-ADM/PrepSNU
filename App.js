@@ -1,8 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import {StatusBar} from 'react-native';
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider, IconRegistry, useTheme } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { AppNavigator } from './components/navigation/navigation.component';
+import 'react-native-gesture-handler';
 
 export default function App() {
     return (

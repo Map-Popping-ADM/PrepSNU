@@ -1,20 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider, IconRegistry, useTheme } from '@ui-kitten/components';
+import { EvaIconsPack } from '@ui-kitten/eva-icons';
+import { AppNavigator } from './components/navigation/navigation.component';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <>
+            <StatusBar
+                translucent={false}
+                barStyle="dark-content"
+                backgroundColor="orange"
+            // Pour utiliser la couleur du bg : theme["background-basic-color-1"]
+            />
+            <IconRegistry icons={EvaIconsPack} />
+            {/* TODO créer un variable pour changer le thème */}
+            <ApplicationProvider {...eva} theme={eva.dark}>
+                <AppNavigator />
+            </ApplicationProvider>
+        </>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

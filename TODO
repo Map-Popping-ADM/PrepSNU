@@ -1,13 +1,15 @@
 ATTETION: fichier a lire avec TODO+ (vs code)
 
 Project:
-    ☐ faire la liste des 50 pays
-    ☐ + liste des icon des drapeaux
+    ☐ faire la liste des 50 pays @critical 
+    ☐ + liste des icon des drapeaux @critical 
 
-    ☐ fichier config pour la langue
+    ☐ fichier config pour la langue @critical 
+
+    ☐ créer un logo @high
 
     Home:
-        ☐ card avec image pour aller vers Carte @high
+        ☐ card avec image pour aller vers Carte @high @started(22-03-31 18:31)
         ☐ barre de recherche pour la liste @critical
         ☐ liste de pays @critical
     

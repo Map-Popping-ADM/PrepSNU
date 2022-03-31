@@ -27,10 +27,11 @@ export const HomeScreen = ({ navigation }) => {
   );
 
   const navigateParametres = () => (
-    // TODO naviguer vers la page parametre
     navigation.navigate('Parametres') 
   );
-  // TODO navigation vers la page info
+  const navigateInfos = () => (
+    navigation.navigate('Infos')
+  );
 
   const renderRightActions = () => (
     <React.Fragment>
@@ -39,7 +40,7 @@ export const HomeScreen = ({ navigation }) => {
         visible={menuVisible}
         onBackdropPress={toggleMenu}>
         <MenuItem accessoryLeft={Parametre} title='Paramètres' onPress={navigateParametres}/>
-        <MenuItem accessoryLeft={Info} title='Infos' onPress={navigateParametres}/>
+        <MenuItem accessoryLeft={Info} title='Infos' onPress={navigateInfos}/>
       </OverflowMenu>
     </React.Fragment>
   );

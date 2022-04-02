@@ -6,6 +6,7 @@ import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { AppNavigator } from './components/navigation/navigation.component';
 import 'react-native-gesture-handler';
 
+
 /**
  * @description
  * IconRegistry : préchargement des icons eva

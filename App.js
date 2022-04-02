@@ -6,7 +6,7 @@ import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { AppNavigator } from './components/navigation/navigation.component';
 import 'react-native-gesture-handler';
 
-// test
+// test 2
 
 export default function App() {
     return (

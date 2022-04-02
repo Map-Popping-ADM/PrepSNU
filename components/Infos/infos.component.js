@@ -6,7 +6,7 @@ const BackIcon = (props) => (
   <Icon {...props} name='arrow-back' />
 );
 
-export const DetailsScreen = ({ navigation }) => {
+export const InfosScreen = ({ navigation }) => {
 
   const navigateBack = () => {
     navigation.goBack();
@@ -18,10 +18,10 @@ export const DetailsScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <TopNavigation title='MyApp' alignment='center' accessoryLeft={BackAction} subtitle='parametres'/>
+      <TopNavigation title='MyApp' alignment='center' accessoryLeft={BackAction} subtitle='infos'/>
       <Divider/>
       <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text category='h1'>Settings</Text>
+        <Text category='h1'>Infos</Text>
       </Layout>
     </SafeAreaView>
   );

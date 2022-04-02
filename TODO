@@ -31,11 +31,11 @@ Project:
         ☐ buton pour choisir un pays @critical
     
     Parametres:
-        ☐ id api @critical 
+        ✔ id api @critical @done(22-04-02 13:06)
         ☐ buton abonnement (soon) / lien pour avoir des id @high
-        ☐ apparence @high (mode sombre/clair)
-        ☐ liste d'articles chargés max @high
-        ☐ langue de l'app / langue des articles @critical 
+        ✔ apparence @high (mode sombre/clair) @done(22-04-02 13:06)
+        ☐ liste d'articles chargés max @high 
+        ✔ langue de l'app / langue des articles @critical @done(22-04-02 13:06)
 
     API:
 

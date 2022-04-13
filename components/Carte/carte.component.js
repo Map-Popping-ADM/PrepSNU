@@ -2,7 +2,6 @@ import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { Text, Divider, Layout, TopNavigation, TopNavigationAction, Icon, Card } from '@ui-kitten/components';
 import { MenuItem, OverflowMenu } from '@ui-kitten/components';
-import { ImageBackground } from 'react-native-web';
 
 const MenuIcon = (props) => (
     <Icon {...props} name='more-vertical' />
@@ -14,7 +13,7 @@ const Info = (props) => (
     <Icon {...props} name='info-outline' />
 );
 
-export const HomeScreen = ({ navigation }) => {
+export const CarteScreen = ({ navigation }) => {
 
     //TODO: Quelqu'un peut exporter l'action de droite dans un autre fichier ? (sachant que on doit prendre en arguments navigation)
     const [menuVisible, setMenuVisible] = React.useState(false);
@@ -47,30 +46,12 @@ export const HomeScreen = ({ navigation }) => {
     );
     //jusqu'ici
 
-    const navigateCarte = () => (
-        navigation.navigate('Carte')
-    );
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <TopNavigation title='MyApp' alignment='center' accessoryRight={renderRightActions} />
             <Divider />
             <Layout style={{ flex: 1, justifyContent: 'space-around', alignItems: 'center' }}>
-                <Card style={styles.card} onPress={navigateCarte}>
-                    <Text category="h2">
-                        Carte
-                    </Text>
-                </Card>
             </Layout>
         </SafeAreaView>
     );
 };
-
-
-
-const styles = StyleSheet.create({
-    card: {
-        margin: 15,
-        width: "90%",
-        height: "20%"
-    }
-});

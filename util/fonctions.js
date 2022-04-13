@@ -1,5 +1,7 @@
 const axios = require('axios');
 
+
+//TODO: changer token et limit dans les paramètres
 async function mediastack(pays, categorie) {
     let token = "bd83f1003997370821d2d357063ce57a";
     let limit = "100";
